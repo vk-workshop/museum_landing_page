@@ -1,0 +1,126 @@
+@mixin onTablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin onDesktop {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin pageGrid {
+  display: grid;
+  margin-inline: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+
+  @include onTablet {
+    grid-template-columns: repeat(6, 1fr);
+    margin-inline: 39;
+    column-gap: 30px;
+  }
+
+  @include onDesktop {
+    grid-template-columns: repeat(12, 1fr);
+    margin-inline: 55px;
+    column-gap: 30px;
+  }
+}
+
+@mixin square-after-title {
+  &::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: $red-orange;
+    position: absolute;
+    top: 10px;
+    left: 240px;
+
+    @include onTablet {
+      top: 12px;
+      height: 15px;
+      width: 15px;
+      left: 310px;
+    }
+  }
+}
+
+@mixin square-after2-title {
+  &::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: $red-orange;
+    position: absolute;
+    top: 10px;
+    left: 205px;
+
+    @include onTablet {
+      top: 12px;
+      height: 15px;
+      width: 15px;
+      left: 260px;
+    }
+  }
+}
+
+@mixin title-h3 {
+  color: $dark-maroon;
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+
+  @include onTablet {
+    font-size: 36px;
+  }
+
+  @include onDesktop {
+    font-size: 36px;
+  }
+}
+
+@mixin p-font-styles {
+  color: $dim-gray;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+@mixin title-h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+@mixin title-h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+@mixin title {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@mixin text {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin dev-text {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+}

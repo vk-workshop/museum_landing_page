@@ -1,3 +1,14 @@
-body {
-  margin: 0;
-}
+@import "utils";
+@import "./blocks/header";
+@import "./blocks/main";
+@import "./blocks/actual";
+@import "./blocks/title-tickets";
+@import "./blocks/actual-last";
+@import "./blocks/schedule";
+@import "./blocks/subscribe";
+@import "./blocks/gallery";
+@import "./blocks/footer";
+@import "./blocks/aside";
+@import "./blocks/page";
+@import "./blocks/scroll-to-top";
+@import "./blocks/slider";

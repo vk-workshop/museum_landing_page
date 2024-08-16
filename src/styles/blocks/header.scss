@@ -1,0 +1,114 @@
+.header {
+  @include pageGrid;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__bg {
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: 4 / -1;
+    }
+
+    @include onDesktop {
+      grid-column: -8 / -1;
+    }
+  }
+
+  &__title-div {
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-row: 1;
+      margin: 127px 0 0;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      grid-column: 1 / 3;
+    }
+
+    @include onDesktop {
+      margin: 206px 0 0;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      grid-column: 1 / 6;
+    }
+  }
+
+  &__logo {
+    width: 63px;
+    height: 72px;
+    position: absolute;
+    top: 9px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateX(-50%) scale(1.1);
+    }
+
+    @include onTablet {
+      top: 15px;
+      left: 66%;
+      transform: translateX(-50%);
+    }
+
+    @include onDesktop {
+      left: 52%;
+    }
+  }
+
+  &__burger {
+    background-image: url(../icons/icon-hamburger.svg);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 27px;
+    transition: background-image 0.3s ease;
+
+    &:hover {
+      background-image: url(../icons/icon-burger-menu-24-hover.svg);
+    }
+
+    @include onTablet {
+      top: 40px;
+    }
+  }
+
+  &__podiyi {
+    @include text;
+
+    color: $slate-gray;
+    font-weight: 700;
+    transform: rotate(-90deg);
+    display: flex;
+    position: absolute;
+    top: 522px;
+    left: 3%;
+    display: none;
+
+    @include onDesktop {
+      display: flex;
+    }
+
+    &__line {
+      width: 1px;
+      height: 70px;
+      background-color: $dark-teal;
+      position: absolute;
+      top: 585px;
+      left: 4%;
+      display: none;
+
+      @include onDesktop {
+        display: flex;
+      }
+    }
+  }
+}

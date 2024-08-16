@@ -1,0 +1,31 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  grid-column: 1 / -1;
+
+  @include onDesktop {
+    display: none;
+  }
+}
+
+.swiper-pagination {
+  bottom: 0;
+  left: 50%;
+  display: flex;
+  gap: 11px;
+  justify-content: center;
+}
+
+.swiper-pagination-bullet {
+  width: 9px;
+  height: 9px;
+  background-color: $dark-teal;
+}
+
+.swiper-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
