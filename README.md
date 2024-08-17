@@ -14,7 +14,7 @@ The Museum project is a web-based platform designed to provide an interactive ex
 
 ## Preview
 
-You can view the live project here: [Museum Preview](https://)
+You can view the live project here: [Museum Preview]([https://](https://vk-workshop.github.io/museum_portfolio/))
 
 ## Mockup
 
@@ -26,4 +26,6 @@ To launch the project locally, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/vk-workshop/Museum.git
+   git clone https://github.com/your-username/museum_portfolio.git
+   cd museum_portfolio
+
