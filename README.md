@@ -29,3 +29,7 @@ To launch the project locally, follow these steps:
    git clone https://github.com/your-username/museum_portfolio.git
    cd museum_portfolio
 
+2. **Install Dependencies**:
+   Make sure you have Node.js installed. This project requires **Node.js v14.x**. You can check your Node version by running:
+   ```bash
+   node -v
