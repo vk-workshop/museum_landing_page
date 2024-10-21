@@ -14,7 +14,7 @@ The Museum project is a web-based platform designed to provide an interactive ex
 
 ## Preview
 
-You can view the live project here: [Museum Preview](https://vk-workshop.github.io/museum_portfolio/)
+You can view the live project here: [Museum Preview]( https://vk-workshop.github.io/museum_landing_page/)
 
 ## Mockup
 
